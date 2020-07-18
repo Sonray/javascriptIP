@@ -43,17 +43,75 @@ function getData(){
 
     var finalDay = dayOfWeek(noOfDay);
 
+    alert(finalDay)
+    display.innerText = finalDay
+    
+}//function check
+
+function male(birthDay){
+
     //male[0] is sunday
     var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+
+    if (birthDay === "Sunday"){
+        return male[0]
+    }
+    else if (birthDay === "Monday"){
+        return male[1]
+    }
+    else if (birthDay === "Tuesday"){
+        return male[2]
+    }
+    else if (birthDay === "Wednesday"){
+        return male[3]
+    }
+    else if (birthDay === "Thursday"){
+        return male[4]
+    }
+    else if (birthDay === "Friday"){
+        return male[5]
+    }
+    else if (birthDay === "Saturday"){
+        return male[6]
+    }
+
+}
+
+function female(birthDay){
 
     //female[0] is sunday
     var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
+    if (birthDay === "Sunday"){
+        return male[0]
+    }
+    else if (birthDay === "Monday"){
+        return male[1]
+    }
+    else if (birthDay === "Tuesday"){
+        return male[2]
+    }
+    else if (birthDay === "Wednesday"){
+        return male[3]
+    }
+    else if (birthDay === "Thursday"){
+        return male[4]
+    }
+    else if (birthDay === "Friday"){
+        return male[5]
+    }
+    else if (birthDay === "Saturday"){
+        return male[6]
+    }
+
+}
+
+function akan(){
 
 
-    alert(finalDay)
-    display.innerText = finalDay
-    
+    //female[0] is sunday
+    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
 }
 
 
@@ -62,10 +120,10 @@ form.addEventListener('submit', (e) => {
     if (year.value == null || year.value === ""){
         messages.push('Year is required')
     }
-    else if (month.value == null || month.value === "" && month.value <= "0" && month.value > "12" ){
+    else if (month.value == null || month.value === ""){
         messages.push('Month is required')
     }
-    else if (day.value == null || day.value === "" && day.value <= "0" && day.value >"32" ){
+    else if (day.value == null || day.value === ""){
         messages.push('Day is required')
     }
 
@@ -77,7 +135,5 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         display.innerText = getData()
     }
-
-
     
-})
+})//function check
