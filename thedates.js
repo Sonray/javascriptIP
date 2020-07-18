@@ -60,13 +60,13 @@ function getData(){
 form.addEventListener('submit', (e) => {
     let messages = [];
     if (year.value == null || year.value === ""){
-        messages.push('Name is required')
+        messages.push('Year is required')
     }
-    else if (month.value == null || month.value === ""){
-        messages.push('Name is required')
+    else if (month.value == null || month.value === "" && month.value <= "0" && month.value > "12" ){
+        messages.push('Month is required')
     }
-    else if (day.value == null || day.value === ""){
-        messages.push('Name is required')
+    else if (day.value == null || day.value === "" && day.value <= "0" && day.value >"32" ){
+        messages.push('Day is required')
     }
 
     if (messages.length > 0 ){
