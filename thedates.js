@@ -22,27 +22,37 @@ function getData(){
     var noOfDay = Math.trunc(curr);
 
     function dayOfWeek (day){
-    if (day === 1){
-        return "Monday";
-    } else if (day === 2){
-        return "Tuesday";
-    } else if (day === 3){
-        return "Wednesday";
-    } else if (day === 4){
-        return "Thursday";
-    } else if (day === 5){
-        return "Friday";
-    } else if (day === 6){
-        return "Saturday";
-    } else if (day === 7){
-        return "Sunday";
-    }
+
+        if (day === 1){
+            return "Monday";
+        } else if (day === 2){
+            return "Tuesday";
+        } else if (day === 3){
+            return "Wednesday";
+        } else if (day === 4){
+            return "Thursday";
+        } else if (day === 5){
+            return "Friday";
+        } else if (day === 6){
+            return "Saturday";
+        } else if (day === 7){
+            return "Sunday";
+        }
+
     }
 
     var finalDay = dayOfWeek(noOfDay);
 
+    //male[0] is sunday
+    var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+
+    //female[0] is sunday
+    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
+
+
     alert(finalDay)
-    display.innerHTML = finalDay
+    display.innerText = finalDay
     
 }
 
