@@ -45,6 +45,8 @@ function getData(){
 
     alert(finalDay)
     display.innerText = finalDay
+
+    return finalDay
     
 }//function check
 
@@ -83,34 +85,38 @@ function female(birthDay){
     var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
     if (birthDay === "Sunday"){
-        return male[0]
+        return female[0]
     }
     else if (birthDay === "Monday"){
-        return male[1]
+        return female[1]
     }
     else if (birthDay === "Tuesday"){
-        return male[2]
+        return female[2]
     }
     else if (birthDay === "Wednesday"){
-        return male[3]
+        return female[3]
     }
     else if (birthDay === "Thursday"){
-        return male[4]
+        return female[4]
     }
     else if (birthDay === "Friday"){
-        return male[5]
+        return female[5]
     }
     else if (birthDay === "Saturday"){
-        return male[6]
+        return female[6]
     }
 
 }
 
 function akan(){
 
+    var birthDay = getData();
 
-    //female[0] is sunday
-    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+    var akanMale = male(birthDay)
+    var akanFemale = female(birthDay)
+
+    alert(akanFemale)
+    alert(akanMale)
 
 }
 
@@ -133,7 +139,7 @@ form.addEventListener('submit', (e) => {
         
     }else {
         e.preventDefault();
-        display.innerText = getData()
+        display.innerText = getData(), akan()
     }
     
 })//function check
