@@ -3,6 +3,8 @@ const year = document.getElementById('year');
 const month = document.getElementById('month');
 const day = document.getElementById('date');
 const display = document.getElementById('display');
+const males = document.getElementById('males');
+const females = document.getElementById('females');
 
 
 
@@ -110,13 +112,23 @@ function female(birthDay){
 
 function akan(){
 
-    var birthDay = getData();
+    if (form.males.checked === true && form.females.checked === true ){
+        alert ("You can not fill both Genders choose one")
+    }
+    else if (form.males.checked === true) {
+        var birthDay = getData();
+        var results = male(birthDay)
+        alert(results) 
 
-    var akanMale = male(birthDay)
-    var akanFemale = female(birthDay)
+    }else if (form.females.checked === true ) {
+        var birthDay = getData();
+        var result = female(birthDay)
+        return alert(result)
 
-    alert(akanFemale)
-    alert(akanMale)
+    }
+    else {
+        alert("Check your Gender in the check-box")
+    }
 
 }
 
