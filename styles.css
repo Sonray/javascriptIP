@@ -7,3 +7,14 @@ form #year, #month, #date{
 form{
     font-size: 30px;
 }
+button:hover {
+    background-color: black;
+    color: white;
+}
+button{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 25%;
+    text-align: center;
+    box-shadow: 2px 10px rgb(207, 196, 196);
+}
