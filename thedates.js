@@ -5,13 +5,14 @@ const day = document.getElementById('date');
 const display = document.getElementById('display');
 const males = document.getElementById('males');
 const females = document.getElementById('females');
+const akanis = document.getElementById('akanis');
+const vision = document.getElementById('vision');
 
 
 
 function getData(){
 
     var firstYear = year.value
-    alert(typeof(firstYear))
 
     var years = firstYear;
     var year1 = years.slice(2);
@@ -44,9 +45,9 @@ function getData(){
     }
 
     var finalDay = dayOfWeek(noOfDay);
-
-    alert(finalDay)
-    display.innerText = finalDay
+    var disp = "You were born on "+ '<br> <h2>'+ finalDay +'</h2> '
+    
+    display.innerHTML = disp 
 
     return finalDay
     
@@ -79,7 +80,7 @@ function male(birthDay){
         return male[6]
     }
 
-}
+}//function check
 
 function female(birthDay){
 
@@ -108,7 +109,7 @@ function female(birthDay){
         return female[6]
     }
 
-}
+}//function check
 
 function akan(){
 
@@ -118,19 +119,22 @@ function akan(){
     else if (form.males.checked === true) {
         var birthDay = getData();
         var results = male(birthDay)
-        alert(results) 
+        var akanmale = "Your Akan name is "+ '<br><h1>'+ results +'<h1>'
+        akanis.innerHTML = akanmale
 
-    }else if (form.females.checked === true ) {
+    }
+    else if (form.females.checked === true ) {
         var birthDay = getData();
         var result = female(birthDay)
-        return alert(result)
+        var akanfemale = "Your Akan name is "+ '<br><h1>'+ result +'<h1>'
+        akanis.innerHTML = akanfemale
 
     }
     else {
         alert("Check your Gender in the check-box")
     }
 
-}
+}//function check
 
 
 form.addEventListener('submit', (e) => {
