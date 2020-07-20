@@ -53,10 +53,9 @@ span{
     opacity: 0.6;
 }
 #display, #akanis {
-    font-size: 15px;
+    font-size: 30px;
     background-color: yellowgreen;
     color: black;
-    opacity: 0.5;
 }
 body{
     background-color: blue;
