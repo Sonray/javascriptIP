@@ -6,6 +6,9 @@
 Birth Break is a website that takes your birthday and calculates the day of 
 the week you were born and then depending on your gender outputs your Akan Name. 
 
+#### link to site
+https://sonray.github.io/javascriptIP/
+
 ## About Author
 Author's name is David Okwacha
 I have worked on some major projects in web development which include;

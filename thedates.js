@@ -139,10 +139,10 @@ function akan(){
 
 form.addEventListener('submit', (e) => {
     let messages = [];
-    if (day.value <= "0" && day.value >= "32" ){
+    if (day.value === 0 && day.value >= 32 ){
         messages.push('Invalid Date Entered')
     }
-    else  if (month.value <= "0" && month.value >= "13"){
+    else  if (month.value <= 0 && month.value >= 13 ){
         messages.push('Invalid Month Entered')
     }
     else  if (year.value == null || year.value === ""){
