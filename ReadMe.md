@@ -1,20 +1,30 @@
 # David Okwacha 
+
 ## Birth Break
-This web application displays Akan names. 20th July 2020
+
 ## Description
 Birth Break is a website that takes your birthday and calculates the day of 
 the week you were born and then depending on your gender outputs your Akan Name. 
 
+## About Author
+Author's name is David Okwacha
+I have worked on some major projects in web development which include;
+1 . Fitness-hub
+2 . Group DAlex
+
 ## Setup/Installation Requirements
-Set up a web browser and you are good to go
-## Known Bugs
-None so far but if you have one let us know. There is likelyhood that there is no bugs because bootstrap has been widely used
+Set up a web browser and you are good to go. Launch the website, enter your name and 
+find your Akan name.
+
+## BDD
+Birth-break is a BDD that allows users to enter their birthdays and get their Ghana Akan names
 
 ### Technologies Used
 #### 1. HTML
 #### 2. CSS
 #### 3. JavaScript
 #### 4. Bootsrap
+
 ## Support and contact details
 In case you run into any issues or have questions, ideas or concerns. Contact David Okwacha
 

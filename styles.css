@@ -31,6 +31,14 @@ button:active {
 }
 .jumbotron{
     text-align: center;
+    background-color: blue;
+    background-image: url(./image/ghana-649756_1920.png);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.jumbotron h1 {
+    margin-left: 10vw;
 }
 span{
     color: red;
@@ -49,4 +57,7 @@ span{
     background-color: yellowgreen;
     color: black;
     opacity: 0.5;
+}
+body{
+    background-color: blue;
 }
